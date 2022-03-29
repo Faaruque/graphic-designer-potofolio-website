@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap");
+
+/* default css start here*/
+/* color 
+blue -> 053CA2
+red-copy -> F35241 */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+a {
+  color: #f35241;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+a :hover {
+  color: #ffdf20;
+}
+/* default css end here*/
+
+/* topHead aria css start here */
+.topBar-phone {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0 0.7rem;
+}
+.topBar-email {
+  border-right: 1px solid #ddd;
+  padding-right: 0.7rem;
+}
+.topBar-phone i {
+  color: #ffdf20;
+  padding-right: 0.7rem;
+  font-weight: 600;
+}
+.topBar-email i {
+  color: #ffdf20;
+  padding: 0 0.7rem;
+}
+.topBar-phone span,
+.topBar-email span {
+  font-size: 0.8rem;
+}
+.topBar-socil-icon a {
+  border-right: 1px solid #ddd;
+}
+.topBar-socil-icon a:first-child {
+  border-left: 1px solid #ddd;
+}
+.topBar-socil-icon a i {
+  padding: 0 0.7rem;
+}
+.topBar-socil-icon a:hover {
+  color: #ffdf20 !important;
+}
+/* topHead aria css end here */
+
+/* navBar area css start here */
+#nav {
+  background: #f30b65;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.nav-list li a:hover {
+  color: #ffdf20 !important;
+}
+/* navBar area css end here */
+
+/* hero-area css start here */
+#hero-area {
+  background: linear-gradient(to right, #894343ed, #ffdf209c, #f30b65),
+    url("https://cdn.pixabay.com/photo/2021/04/25/04/01/man-6205496_960_720.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 85%,
+    50% 100%,
+    0 85%,
+    0% 35%,
+    0 0
+  );
+}
+.hero-area-wapper {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.hero-aria-btn {
+  margin: 4rem auto 1rem;
+}
+.hero-aria-btn a {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 12px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+.hero-aria-btn a:hover {
+  background: #ffdf20;
+  color: #fff;
+}
+
+/* hero-area css end here */
+
+/* bottom to top scroll button css here  */
+#scrollTop {
+  position: fixed;
+  background: #f30b65;
+  color: #ffdf20;
+  font-size: 22px;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+}
+#scrollTop:active {
+  background: #f35241;
+}
+/* abou-area css start here */
+.abou-area-img img {
+  width: 100%;
+  height: auto;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* abou-area css end here */
+
+/* skills-area css start here */
+.skills-area-wapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.skills-area-single-box {
+  background-image: linear-gradient(#f30b65, #ffdf20, #f35241);
+  max-width: 330px;
+  height: 320px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.skills-area-single-box:hover {
+  padding: 1rem;
+  box-shadow: 1px 1px 16px 0px #ffffffb0;
+}
+/* skills-area css end here */
+
+/* service-area css start here */
+.service-area {
+  background: #ddd;
+}
+#service-area-wapper {
+  background: #fff;
+  padding: 1rem;
+}
+.service-area-single-box {
+  margin: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.service-area-single-box img {
+  width: 100%;
+  height: 190px;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 2s;
+}
+.service-area-single-box:hover img {
+  transform: scale(1.3);
+}
+/* service-area css start here */
+
+/* price-area css start here */
+#price-area {
+  background: #ddd;
+}
+.price-single-box {
+  height: 590px;
+  position: relative;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 1px 1px 20px 1px #100f0fb0;
+}
+.single-box-content {
+  position: relative;
+}
+.single-box-content h5 {
+  font-size: 2rem;
+}
+.single-box-content span {
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+.single-box-content strong {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+}
+.price-item li {
+  padding: 0 1rem;
+  display: block;
+  list-style: none;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+}
+.price-item li span {
+  transition: 0.5s ease;
+}
+.price-item li:hover span {
+  border-bottom: 1px solid #f30b65;
+}
+.price-item i {
+  margin-right: 0.9rem;
+  color: #f30b65;
+}
+.price-btn {
+  position: absolute;
+  background: #f35241;
+  bottom: 0;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+.price-btn:hover {
+  background: #ffdf20;
+}
+.price-btn a {
+  color: #333;
+}
+/* price-area css end here */
+
+/* portfolio-area css start here */
+.portfolio-area {
+  background: #ddd;
+}
+.portfolio-area .portfolio-menu li {
+  border: 1px solid #ffdf20;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin: 15px 5px;
+  cursor: pointer;
+}
+.portfolio-menu li.nav-item.active {
+  background: #ffdf20;
+}
+.single-portfolio {
+  position: relative;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.8s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px 3px #000000b0;
+}
+.single-portfolio img {
+  width: 100%;
+  height: 200px;
+  transition: transform 2s;
+}
+.single-portfolio:hover img {
+  transform: scale(1.3);
+}
+/* portfolio-area css end here */
+
+/* customar-area css start here */
+.customar-area {
+  background-image: linear-gradient(#d95b8fa6, #d95b8fa6),
+    url(../image/img/start-online-home-business.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.coustomar-single-box {
+  padding: 10px;
+}
+.coustomar-single-box i {
+  font-size: 80px;
+  padding: 15px;
+  color: #ffdf20;
+}
+.work-area h3 {
+  font-size: 60px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.work-area-wapper {
+  margin: auto;
+}
+.work-area-wapper i {
+  background: #f35241;
+  border: 1px solid #ffdf20;
+  color: #ffdf20;
+  font-size: 28px;
+  padding: 14px 18px;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+}
+.mail-section {
+  position: relative;
+  bottom: -75px;
+  left: 0;
+  z-index: 2;
+}
+/* customar-area css end here */
+
+/* subscribe-area css start here */
+.mail-section {
+  position: relative;
+  bottom: -75px;
+  left: 0;
+  z-index: 2;
+}
+.mail-section-wapper {
+  background-color: #ffdf20;
+  border-radius: 15px;
+}
+.mail-section-box {
+  margin-left: 10px;
+  padding: 25px;
+}
+.mail-section-box span {
+  display: block;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.mail-area-social :hover {
+  background-color: #f30b65;
+  color: #fff;
+}
+.mail-area-social a {
+  list-style: none;
+  padding: 6px 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  transition: 0.5s;
+}
+.mail-section-box input {
+  padding: 12px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+}
+.btn-submit {
+  background: #f30b65;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1rem;
+  border: none;
+}
+.mail-section-box .btn-submit a {
+  color: #fff;
+  text-decoration: none;
+}
+/* subscribe-area end start here */
+
+/* footer-area css start here */
+.footer-area {
+  position: relative;
+  background: #f30b65;
+}
+.left-single-box-text h2 {
+  color: #bdc3c7;
+}
+.left-single-box-text p {
+  color: #bdc3c7;
+  font-size: 16px;
+}
+.footer-link i:hover {
+  background: #ffdf20;
+}
+.footer-link i {
+  background: #bdc3c7;
+  color: #000;
+  padding: 15px;
+  border: 1px solid #ffdf20;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.right-single-box h2 {
+  color: #bdc3c7;
+}
+.footer-right-single-box {
+  margin-top: 18px;
+}
+.footer-right-single-box i {
+  color: #ffdf20;
+  font-size: 22px;
+  margin-right: 12px;
+}
+.footer-right-single-box span {
+  color: #bdc3c7;
+}
+/* footer-area css end here */
+
+@media screen and (max-width: 576px) {
+  .abou-area-content p {
+    font-size: 0.9rem;
+    text-align: justify !important;
+  }
+  .single-box-content h5 {
+    font-size: 1.3rem;
+  }
+  .single-box-content span {
+    font-size: 0.9rem;
+  }
+  .customar-area {
+    background-size: cover;
+  }
+  .work-area h3 {
+    font-size: 1.9rem;
+  }
+  .work-area-wapper {
+    text-align: start !important;
+  }
+  .footer-right-single-box i {
+    font-size: 1rem;
+  }
+  .footer-right-single-box span {
+    font-size: 0.9rem !important;
+  }
+  .footer-area span {
+    font-size: 1rem;
+    padding-bottom: 0.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .abou-area-content p {
+    font-size: 0.9rem;
+    text-align: justify !important;
+  }
+  .mail-section-box {
+    margin: 0 !important;
+  }
+  .mail-area-social a {
+    margin-right: 0;
+  }
+}
